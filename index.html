@@ -2,56 +2,202 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Mis Videojuegos</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Sci-Fi Shooter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #1e1e2f;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: #0e0e2c;
             color: #ffffff;
-            padding: 20px;
         }
 
-        .juego {
-            background-color: #2a2a3c;
+        header {
+            background-color: #1f1f3f;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #00f0ff;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: #ccc;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #1a1a33;
+            border-radius: 12px;
+            width: 300px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
             padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 15px;
         }
 
-        .juego h2 {
-            margin-top: 0;
-            color: #00e5ff;
+        .card-content h2 {
+            color: #00eaff;
+            margin: 0 0 10px;
         }
 
-        .juego p {
+        .card-content p {
             margin: 5px 0;
+        }
+
+        .card-content strong {
+            color: #87f3ff;
         }
     </style>
 </head>
 
 <body>
-    <h1>🎮 Videojuegos Desarrollados por el Equipo</h1>
 
-    <div class="juego">
-        <h2>Galaxy Runner</h2>
-        <p><strong>Género:</strong> Aventura Espacial</p>
-        <p><strong>Lenguaje:</strong> JavaScript</p>
-        <p><strong>Descripción:</strong> Corre a través de planetas y esquiva meteoritos para llegar a tu nave.</p>
-    </div>
+    <header>
+        <h1>Video Juegos</h1>
+        <p>Explora títulos futuristas con batallas espaciales y acción intensa</p>
+    </header>
 
-    <div class="juego">
-        <h2>Pixel Chef</h2>
-        <p><strong>Género:</strong> Simulación / Cocina</p>
-        <p><strong>Lenguaje:</strong> Python</p>
-        <p><strong>Descripción:</strong> Cocina recetas locas en una cocina pixelada llena de sorpresas.</p>
-    </div>
+    <div class="container">
+        <!-- HALO -->
+        <div class="card">
+            <img src="https://media.revistagq.com/photos/61968f9cf654c19d66ebdd77/16:9/w_2560%2Cc_limit/Halo-Infinite.jpeg"
+                alt="Halo">
+            <div class="card-content">
+                <h2>Halo</h2>
+                <p><strong>Género:</strong> Shooter en primera persona</p>
+                <p><strong>Lenguaje:</strong> C++ / Motor Slipspace</p>
+                <p><strong>Descripción:</strong> Enfréntate al Covenant como el Jefe Maestro en esta saga legendaria.
+                </p>
+            </div>
+        </div>
 
-    <div class="juego">
-        <h2>Pixel Chef</h2>
-        <p><strong>Género:</strong> Simulación / Cocina</p>
-        <p><strong>Lenguaje:</strong> Python</p>
-        <p><strong>Descripción:</strong> Cocina recetas locas en una cocina pixelada llena de sorpresas.</p>
+        <!-- DESTINY -->
+        <div class="card">
+            <img src="https://store-images.s-microsoft.com/image/apps.5430.14025637361142528.54c4f437-50ab-4432-ae93-e86dd227ecd3.d25314fd-adca-46d3-aa34-ee5d1d6ff1ea?q=90&w=480&h=270"
+                alt="Destiny">
+            <div class="card-content">
+                <h2>Destiny 2</h2>
+                <p><strong>Género:</strong> Shooter MMO</p>
+                <p><strong>Lenguaje:</strong> C++ / Tiger Engine</p>
+                <p><strong>Descripción:</strong> Viaja por planetas como guardián y lucha contra razas alienígenas.</p>
+            </div>
+        </div>
+
+        <!-- WARFRAME -->
+        <div class="card">
+            <img src="https://www-static.warframe.com/uploads/thumbnails/9ac22055578934202cd33d6e9290eb9_1600x900.png"
+                alt="Warframe">
+            <div class="card-content">
+                <h2>Warframe</h2>
+                <p><strong>Género:</strong> Shooter cooperativo</p>
+                <p><strong>Lenguaje:</strong> C++ / Evolution Engine</p>
+                <p><strong>Descripción:</strong> Controla a un ninja espacial y enfréntate a enemigos en galaxias
+                    lejanas.</p>
+            </div>
+        </div>
+
+        <!-- MASS EFFECT -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=800&q=60"
+                alt="Mass Effect">
+            <div class="card-content">
+                <h2>Mass Effect</h2>
+                <p><strong>Género:</strong> RPG / Shooter</p>
+                <p><strong>Lenguaje:</strong> Unreal Engine 3</p>
+                <p><strong>Descripción:</strong> Lidera la galaxia como el comandante Shepard en decisiones épicas.</p>
+            </div>
+        </div>
+
+        <!-- TITANFALL -->
+        <div class="card">
+            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1237970/capsule_616x353.jpg?t=1726160226"
+                alt="Titanfall 2">
+            <div class="card-content">
+                <h2>Titanfall 2</h2>
+                <p><strong>Género:</strong> Shooter futurista</p>
+                <p><strong>Lenguaje:</strong> Source Engine</p>
+                <p><strong>Descripción:</strong> Combina combate de pilotos y titanes en batallas rápidas y verticales.
+                </p>
+            </div>
+        </div>
+
+        <!-- ANTHEM -->
+        <div class="card">
+            <img src="https://media.contentapi.ea.com/content/dam/eacom/anthem/anthem/vids/es-es/anthem-gameplay-es.youtube/subassets/poster.jpg.adapt.crop16x9.431p.jpg"
+                alt="Anthem">
+            <div class="card-content">
+                <h2>Anthem</h2>
+                <p><strong>Género:</strong> Shooter cooperativo</p>
+                <p><strong>Lenguaje:</strong> Frostbite Engine</p>
+                <p><strong>Descripción:</strong> Usa exotrajes voladores para explorar un mundo lleno de amenazas
+                    alienígenas.</p>
+            </div>
+        </div>
+
+        <!-- DOOM -->
+        <div class="card">
+            <img src="https://cdn1.epicgames.com/offer/b5ac16dc12f3478e99dcfea07c13865c/EGS_DOOMEternal_idSoftware_S1_2560x1440-06b46993a4b6c19a9e614f2dd1202215"
+                alt="DOOM">
+            <div class="card-content">
+                <h2>DOOM Eternal</h2>
+                <p><strong>Género:</strong> Shooter rápido</p>
+                <p><strong>Lenguaje:</strong> id Tech 7</p>
+                <p><strong>Descripción:</strong> Elimina demonios del infierno con armas devastadoras y ritmo frenético.
+                </p>
+            </div>
+        </div>
+
+        <!-- PLANETSIDE -->
+        <div class="card">
+            <img src="https://assets-cdn.daybreakgames.com/uploads/dcsclient/000/000/264/843.jpg?v=1.0"
+                alt="Planetside 2">
+            <div class="card-content">
+                <h2>Planetside 2</h2>
+                <p><strong>Género:</strong> Shooter masivo en línea</p>
+                <p><strong>Lenguaje:</strong> ForgeLight Engine</p>
+                <p><strong>Descripción:</strong> Participa en guerras épicas de hasta mil jugadores por planeta.</p>
+            </div>
+        </div>
+
+        <!-- CRYSIS -->
+        <div class="card">
+            <img src="https://store-images.s-microsoft.com/image/apps.9891.14547281097798613.57bb2783-c344-4881-8149-2fd05c68c586.680e2020-8d06-4519-9a83-25b1d4d4c56a?q=90&w=480&h=270"
+                alt="Crysis">
+            <div class="card-content">
+                <h2>Crysis</h2>
+                <p><strong>Género:</strong> Shooter / Ciencia ficción</p>
+                <p><strong>Lenguaje:</strong> CryEngine</p>
+                <p><strong>Descripción:</strong> Usa un nanotraje con habilidades especiales para combatir alienígenas.
+                </p>
+            </div>
+        </div>
     </div>
 
 </body>
